@@ -14,9 +14,9 @@ yes_no_kb_builder: ReplyKeyboardBuilder = ReplyKeyboardBuilder()
 
 # Добавляем в билдер параметр row с
 yes_no_kb_builder.row(button_yes, button_no, width=2)
-yes_no_kb_builder = yes_no_kb_builder.as_markup(one_time_keyboard=True,
-                                                resize_keyboard=True,
-                                                )
+yes_no_kb = yes_no_kb_builder.as_markup(one_time_keyboard=True,
+                                        resize_keyboard=True,
+                                        )
 
 # ------- Создаем игровую клавиатуру без билдера -------
 
