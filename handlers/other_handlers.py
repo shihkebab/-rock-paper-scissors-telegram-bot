@@ -7,5 +7,5 @@ router: Router = Router()
 
 # Обрабатываем рандомные сообщения
 @router.message()
-async def router_message_answer(message: Message):
-    await message.answer(text=LEXICON_RU['other_answer'])
+async def router_message_answer(msg: Message):
+    await msg.answer(text=LEXICON_RU['other_answer'])

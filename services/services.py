@@ -7,13 +7,15 @@ def get_bot_choice() -> str:
 
 
 def _normalize_user_answer(user_answer: str) -> str:
-    for i in LEXICON_RU:
-        if LEXICON_RU[i] == user_answer:
-            return i
+    for key in LEXICON_RU:
+        if LEXICON_RU[key] == user_answer:
+            return key
         raise Exception
 
 
-def get_winner(user_choice: str, bot_choice: str) -> str:  # доделать
+# Получаем победителя
+def get_winner(user_choice: str, bot_choice: str) -> str:
+    user_choice = _normalize_user_answer(user_choice)
     rule = {'rock': 'scissors',
             'scissors': 'paper',
             'paper': 'rock'}
