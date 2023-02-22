@@ -10,18 +10,18 @@ def _normalize_user_answer(user_answer: str) -> str:
     for key in LEXICON_RU:
         if LEXICON_RU[key] == user_answer:
             return key
-        raise Exception
+    raise Exception
 
 
 # Получаем победителя
 def get_winner(user_choice: str, bot_choice: str) -> str:
     user_choice = _normalize_user_answer(user_choice)
-    rule = {'rock': 'scissors',
-            'scissors': 'paper',
-            'paper': 'rock'}
-    if bot_choice == user_choice:
+    rules: dict[str, str] = {'rock': 'scissors',
+                             'scissors': 'paper',
+                             'paper': 'rock'}
+    if user_choice == bot_choice:
         return 'nobody_won'
-    elif rule[user_choice] == bot_choice:
+    elif rules[user_choice] == bot_choice:
         return 'user_won'
     else:
         return 'bot_won'
