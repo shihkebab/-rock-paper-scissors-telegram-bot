@@ -36,3 +36,6 @@ ___
 
 4. After installing all the libraries run the file `bot.py` and the bot goes online! :tada:
 ___
+### contact me: 
+[![telegram](https://github.com/shihkebab/shihkebab/blob/master/assets/tg/telegram.png)](https://t.me/shihkebab)
+[![lolzteam](https://github.com/shihkebab/shihkebab/blob/master/assets/lolz/LolzTeam-Logo-Green.png)](https://zelenka.guru/shkbab)
