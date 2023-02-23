@@ -20,6 +20,12 @@ async def process_command_help(msg: Message):
     await msg.reply(LEXICON_RU['/help'], reply_markup=yes_no_kb)
 
 
+# Обработчик команды "/dev"
+@router.message(Command(commands=['dev']))
+async def process_command_dev(msg: Message):
+    await msg.reply(LEXICON_RU['/dev'], reply_markup=yes_no_kb)
+
+
 # Хэндлер срабатывает если пользователь соглашается на игру
 @router.message(Text(text=LEXICON_RU['yes_button']))
 async def process_yes_button(msg: Message):
