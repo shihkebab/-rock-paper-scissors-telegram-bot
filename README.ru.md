@@ -38,6 +38,8 @@ ___
 
 4. После установки всех библиотек запускаем файл `bot.py` и бот выходит в сеть!:tada:
 ___
-
+### Обратная связь: 
+[![telegram](https://github.com/shihkebab/shihkebab/blob/master/assets/tg/telegram.png)](https://t.me/shihkebab)
+[![lolzteam](https://github.com/shihkebab/shihkebab/blob/master/assets/lolz/LolzTeam-Logo-Green.png)](https://zelenka.guru/shkbab)
 
  
